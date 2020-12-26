@@ -1,13 +1,19 @@
-import './App.css';
-import Gradient from "./Components";
-function App(props) {
-  console.log(props)
+import React from 'react'
+import {Auth} from "./pages";
+import {Route} from "react-router-dom";
+
+
+function App() {
   return (
-    <div className="App">
-  <h1>hello world</h1>
-      <Gradient />
+    <div className="wrapper">
+        <Route
+            exact
+            path={["/signin", "/signup", "/signup/verify"]}
+            component={Auth}
+        />
     </div>
   );
 }
+
 
 export default App;
