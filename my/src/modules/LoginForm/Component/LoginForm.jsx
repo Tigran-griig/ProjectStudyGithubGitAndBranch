@@ -32,9 +32,8 @@ const LoginForm = props => {
                         onBlur={handleBlur}
                         value={values.email}
                     />
-                    <Alert severity="error" >Error</Alert>
+                    {errors.email && touched.email && <Alert severity="error">{errors.email}</Alert>}
                     <TextField
-                        error={true}
                         variant="outlined"
                         margin="normal"
                         fullWidth
@@ -47,8 +46,7 @@ const LoginForm = props => {
                         onBlur={handleBlur}
                         value={values.password}
                     />
-                    {/*<Alert severity="success" >{message}</Alert>*/}
-
+                    {errors.password && touched.password && <Alert severity="error">{errors.password}</Alert>}
                     <Button onClick={handleSubmit} color={'primary'} variant="contained" size={'large'} >Մուտք</Button>
 
                     <Link className="auth__register-link" to="/signup">

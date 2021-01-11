@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Home = () => {
-    return (
-        <div>
 
-        </div>
+
+const Home = props => {
+    return (
+        <div {...props}  />
     );
 };
 

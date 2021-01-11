@@ -9,11 +9,14 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@material-ui/x-grid-data-generator": "^4.0.0-alpha.11",
+    "@navjobs/upload": "^3.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.9.4",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "css-loader": "^5.0.1",
     "date-fns": "^2.16.1",
     "formik": "^2.2.6",
@@ -22,10 +25,13 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-number-format": "^4.4.3",
+    "react-phone-number-input": "^3.1.8",
     "react-redux": "^7.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-text-mask": "^5.4.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^10.1.0",
@@ -47,6 +53,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "http://localhost:3040",
   "browserslist": {
     "production": [
       ">0.2%",

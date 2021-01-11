@@ -25,17 +25,17 @@ const RegisterForm = props => {
                         variant="outlined"
                         margin="normal"
                         fullWidth
-                        name="fullName"
+                        name="fullname"
                         label="Ամբողջ անունը"
                         type="text"
-                        id="fullName"
+                        id="fullname"
                         autoComplete="current-password"
-                        value={values.fullName}
+                        value={values.fullname}
                         onChange={handleChange}
                         onBlur={handleBlur}
 
                     />
-                    {errors.fullName && touched.fullName && <Alert severity="error">{errors.fullName}</Alert>}
+                    {errors.fullname && touched.fullname && <Alert severity="error">{errors.fullname}</Alert>}
                     {!touched.name ? "" : errors.name}
                     <TextField
                         variant="outlined"
@@ -76,7 +76,7 @@ const RegisterForm = props => {
                         onBlur={handleBlur}
                     />
                     {errors.password_2 && touched.password_2 && <Alert severity="error">{errors.password_2}</Alert>}
-                    <Button disabled={false} onClick={handleSubmit} color={'primary'} variant="contained" size={'large'} >Գրանցվել</Button>
+                    <Button  onClick={handleSubmit} color={'primary'} variant="contained" size={'large'} >Գրանցվել</Button>
                     <Link className="auth__register-link" to="/signin">
                         Մուտք
                     </Link>

@@ -1,11 +1,10 @@
 export default {
-    fullName: (values,errors) => {
-        if (!values.fullName) {
-            errors.fullName = "Գրեք ձեր անունե կամ ազգանունը";
+    fullname: (values,errors) => {
+        if (!values.fullname) {
+            errors.fullname = "Գրեք ձեր անունե կամ ազգանունը";
         }
     },
     email: (values,errors) => {
-
         if (!values.email) {
             errors.email = "Գրեք E-Mail";
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
@@ -28,10 +27,7 @@ export default {
             if (values.password_2 !== values.password) {
                 errors.password_2 = "Գաղտնաբառերե չեն համապատասխանում";
             }
-
-
         }
-
 };
 
 
